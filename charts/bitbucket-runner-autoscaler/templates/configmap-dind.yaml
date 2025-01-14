@@ -8,7 +8,7 @@ metadata:
   name: {{ include "bitbucketRunnerAutoscaler.fullname" $ }}-dind
   namespace: {{ $namespace }}
   labels:
-    {{ - include "bitbucketRunnerAutoscaler.labels" $ | nindent 4 }}
+    {{- include "bitbucketRunnerAutoscaler.labels" $ | nindent 4 }}
 data:
   daemon.json: |
     {
